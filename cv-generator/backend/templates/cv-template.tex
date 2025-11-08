@@ -1,0 +1,225 @@
+\documentclass[10pt,a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem} % For list customization
+\usepackage{titlesec}
+\usepackage{multicol} % For two-column layout
+\usepackage[left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm]{geometry} % Tighter margins
+
+% --- CUSTOMIZATIONS ---
+\pagestyle{empty} % No page numbers
+\setlength{\parindent}{0pt} % No paragraph indent
+\setlist{nosep, leftmargin=*} % More compact lists globally
+
+% Define a custom color for links
+\definecolor{linkcolor}{rgb}{0.1, 0.4, 0.7}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+}
+
+% Improved section headings with better spacing
+\titleformat{\section}
+  {\vspace{6pt}\large\bfseries\scshape\color{black!75}}
+  {}
+  {0em}
+  {}[\color{black!70}\hrule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+% Subsection formatting to match main sections
+\titleformat{\subsection}
+  {\vspace{4pt}\normalsize\bfseries\scshape\color{black!75}}
+  {}
+  {0em}
+  {}[\color{black!70}\hrule height 0.3pt]
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+
+% Tighter project environment
+\newenvironment{project}{
+    \begin{itemize}[leftmargin=1.0em, itemsep=1pt, topsep=1pt, parsep=1pt]
+}{
+    \end{itemize}
+}
+
+% --- DOCUMENT START ---
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge \bfseries Fahad Nadim Ziad}
+    \vspace{4pt}
+    
+    Dhaka, Bangladesh \textbullet{} +8801676212004 \textbullet{} \href{mailto:f.n.ziad@gmail.com}{f.n.ziad@gmail.com} \\
+    \href{https://www.linkedin.com/in/fahadnadimziad}{linkedin.com/in/fahadnadimziad} \textbullet{} \href{https://github.com/fnziad}{github.com/fnziad}
+\end{center}
+
+% --- EDUCATION ---
+\section*{Education}
+\textbf{BRAC University} \hfill Dhaka, Bangladesh \\
+\textit{B.Sc. in Computer Science} \hfill \textit{Expected Graduation: February 2026} \\
+Current CGPA: 3.73/4.0 
+\vspace{6pt}
+
+\textbf{Birshreshtha Noor Mohammad Public College} \hfill Dhaka, Bangladesh \\
+\textit{Higher Secondary Certificate (HSC), Science} \hfill \textit{2021} \\
+GPA: 5.00 / 5.00
+\vspace{6pt}
+
+\textbf{Willes Little Flower School \& College} \hfill Dhaka, Bangladesh \\
+\textit{Secondary School Certificate (SSC), Science} \hfill \textit{2019} \\
+GPA: 5.00 / 5.00
+
+% --- RESEARCH \& DEVELOPMENT EXPERIENCE ---
+\section*{Research \& Projects }
+
+\textbf{A Transformer-Based Framework for Neuro-degenerative Assessment} \textbar{} \textit{Project Lead} \hfill \textit{B.Sc. Thesis (In Progress)}
+\begin{project}
+    \item Leading a team in authoring a B.Sc. thesis proposing a novel, modality-aware \textbf{Transformer} framework for diagnosing neurodegenerative diseases from multi-modal neuroimaging data.
+    \item Architecting a core framework with a \textbf{"modality dropout"} scheme to build a system robust to incomplete clinical data---a critical challenge for real-world deployment.
+\end{project}
+\vspace{4pt}
+
+\textbf{BioAlign-QLoRA: Biomedical Knowledge Graph Alignment} \textbar{} \textit{Project Lead} \hfill \textit{CSE443: Bioinformatics}
+\begin{project}
+    \item Led a team research project developing a novel \textbf{Knowledge Graph Separation methodology} for quantifying structural alignment of LLM embeddings with biomedical knowledge graphs following QLoRA fine-tuning.
+    \item Architected and implemented QLoRA fine-tuning pipeline for Llama-3, Mistral-7B, and Phi-3 models using curated CTD dataset (68,444 gene-disease pairs). Achieved \textbf{83.8\% accuracy} with Mistral model, outperforming pre-trained BioMistral-7B expert.
+    \item Demonstrated \textbf{126\% improvement} in embedding geometric alignment with Phi-3 Mini, validating lightweight model viability for resource-constrained biomedical AI deployment.
+\end{project}
+\vspace{4pt}
+
+\textbf{Mini-VSFS: Virtual File System Implementation} \textbar{} \textit{Solo Developer} \hfill \textit{CSE321: Operating Systems}
+\begin{project}
+    \item Single-handedly designed and implemented a complete virtual file system from scratch featuring custom superblock management with CRC32 checksums and Unix-style inode system (128-byte inodes).
+    \item Built comprehensive bitmap-based allocation tracking, direct block addressing supporting up to 12 blocks per file, with robust error handling and data integrity validation for educational file system concepts.
+\end{project}
+\vspace{4pt}
+
+\textbf{Enhancing Recession Prediction with XAI} \textbar{} \textit{Independent Researcher} \hfill \textit{CSE424: Pattern Recognition}
+\begin{project}
+    \item Conducted a solo project developing a stacking ensemble model that achieved \textbf{96\% accuracy and 100\% recall} in forecasting U.S. recessions.
+    \item Single-handedly constructed the entire dataset by integrating data from over 15 public sources, and used \textbf{SHAP} to interpret the model and validate its economic logic.
+\end{project}
+\vspace{4pt}
+
+\textbf{CampusCompanion: Full-Stack University Platform} \textbar{} \textit{Project Lead} \hfill \textit{CSE470: Software Engineering}
+\begin{project}
+    \item Led the development of a comprehensive university platform with \textbf{React, TypeScript, and Tailwind CSS}, featuring course resource management, resume builder, collaboration hub, and job opportunities.
+    \item Implemented MVC architecture with \textbf{TypeScript interfaces}, role-based access control, and responsive design with dark/light mode themes.
+    \item Deployed on \textbf{Vercel} platform with streamlined deployment process. Platform includes resource sharing, study collaboration tools, and career development features.
+\end{project}
+\vspace{4pt}
+
+\textbf{Demystifying Exoplanet Habitability with XAI} \textbar{} \textit{Project Lead} \hfill \textit{CSE427: Machine Learning}
+\begin{project}
+    \item Led a research project to classify exoplanet habitability, achieving \textbf{99.93\% accuracy} with a LightGBM model by using the SMOTE technique to handle severe class imbalance and \textbf{LIME} for interpretability.
+\end{project}
+\vspace{4pt}
+
+
+\textbf{Gamified Mobile Banking Adoption Analysis} \textbar{} \textit{Project Lead} \hfill \textit{CSE437: Data Science}
+\begin{project}
+    \item Led a research study on FinTech user behavior, applying statistical tests (ANOVA, Chi-Square, Regression) in Python to analyze survey data and derive actionable insights on gamification in mobile banking.
+\end{project}
+\vspace{4pt}
+
+
+
+% --- LEADERSHIP \& EXPERIENCE ---
+\section*{Leadership \& Experience}
+\textbf{Sub Executive, Marketing \& PR} \textbar{} BRAC University Business Club \hfill 2022 -- 2024
+\begin{project}
+    \item Executed multi-platform digital marketing campaigns to promote club events, significantly increasing student attendance and online visibility.
+\end{project}
+\vspace{4pt}
+
+\textbf{Senior Executive, Business Development} \textbar{} IABC | BRACU \hfill 2022 -- 2023
+\begin{project}
+    \item Organized Model UN events, led club promotion initiatives, and managed member recruitment drives.
+\end{project}
+\vspace{4pt}
+
+\textbf{Junior Executive, Research \& Project Management} \textbar{} Robotics Club of BRAC University \hfill 2022 -- 2023
+\begin{project}
+    \item Participated in foundational engineering workshops and contributed to project planning for competitive technical festivals.
+\end{project}
+\vspace{4pt}
+
+\textbf{Apprentice, Communications} \textbar{} BRAC University Film Club \hfill 2022 -- 2023
+\begin{project}
+    \item Hosted and emceed club events, including film screenings and workshops, facilitating audience engagement and leading post-screening educational discussions.
+\end{project}
+\vspace{4pt}
+
+\textbf{Vice President} \textbar{} Willes Science Club \hfill 2017 -- 2019
+\begin{project}
+    \item Led planning and execution of large-scale science and IT events, mentoring junior members and coordinating educational workshops.
+\end{project}
+\vspace{4pt}
+
+% --- TECHNICAL SKILLS \& ACHIEVEMENTS ---
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Programming:} Python, C/C++, JavaScript, TypeScript, SQL, LaTeX
+    \item \textbf{ML/AI:} PyTorch, TensorFlow, Transformers, QLoRA, SHAP, LIME, Scikit-learn
+    \item \textbf{Web:} React, Node.js, Flask, MySQL
+    \item \textbf{Tools:} Git, Docker, Linux, Jupyter, VS Code
+    \item \textbf{Academic:} Research Methodology, Statistical Analysis, Technical Writing
+\end{itemize}
+
+\section*{Languages}
+\textbf{Languages:} English (Fluent, IELTS: 7.5), Bangla (Native), Hindi \& Urdu (Conversational)
+
+% --- AWARDS \& RECOGNITION ---
+\section*{Awards \& Recognition}
+\begin{multicols}{2}
+\textbf{Model UN \& Leadership}
+\begin{itemize}
+    \item Outstanding Delegate, BUPIMUN 2023
+    \item Special Mention, NDCMUN 2020 \& EMUNGA'21
+    \item Verbal Mention, NDCMUN 2018
+    \item 2nd, Extempore Speech, Technobit 2.0
+\end{itemize}
+
+\textbf{Academic Competitions}
+\begin{itemize}
+    \item 1st, ECO Vocabulary, NDC Summit 2017
+    \item 1st, ECO Vocabulary, ACC National Carnival 2018
+    \item 1st, Geek Olympiad, WSC Convening 2017
+    \item 2nd, General Knowledge, WSC Convening 2017
+\end{itemize}
+\columnbreak
+\textbf{Science \& Project Fairs}
+\begin{itemize}
+    \item 2nd, Project Display, ACC Science Fest 2017
+    \item 3rd, Project Display, Willes Science Fest 2015
+    \item 3rd, Nature Study, ACC Science Fest 2017
+    \item Consolation, 9th SGHSC Science Fest 2017
+\end{itemize}
+
+\textbf{Creative \& Cultural}
+\begin{itemize}
+    \item 3rd, Story Writing, WSC 2017
+    \item 1st, Quran Recitation, WLFSC Fest 2016
+\end{itemize}
+\end{multicols}
+
+% --- CORE COMPETENCIES ---
+\section*{Core Competencies}
+\begin{itemize}
+    \item \textbf{Teaching \& Communication:} Experience in hosting events, facilitating discussions, and presenting complex technical concepts
+    \item \textbf{Leadership:} Proven track record in team leadership across multiple student organizations
+    \item \textbf{Problem-Solving:} Strong analytical thinking demonstrated through research projects
+    \item \textbf{Mentoring:} Experience guiding junior members in technical projects and research activities
+\end{itemize}
+
+% --- RESEARCH INTERESTS ---
+\section*{Research Interests}
+Machine Learning in Healthcare, Bioinformatics, Natural Language Processing, Computer Vision, Systems Programming, Explainable AI (XAI)
+
+\end{document}
