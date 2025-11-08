@@ -23,6 +23,8 @@ jobs:
         with:
           root_file: FahadNadimZiad_cv.tex
           working_directory: cv_latex
+          compiler: pdflatex
+          args: -interaction=nonstopmode
 
       - name: Upload PDF as artifact
         uses: actions/upload-artifact@v4
