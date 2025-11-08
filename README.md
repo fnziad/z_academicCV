@@ -10,6 +10,7 @@ This repository contains my academic CV in LaTeX format with automatic PDF compi
 ## 🔄 Automatic Updates
 
 Whenever you push changes to the `.tex` file, GitHub Actions will:
+
 1. Automatically compile it to PDF
 2. Commit the updated PDF back to the repository
 3. Make it available for your portfolio website
@@ -17,6 +18,7 @@ Whenever you push changes to the `.tex` file, GitHub Actions will:
 ## 🌐 Integration with Portfolio Website
 
 ### Option 1: Direct Link to GitHub (Recommended)
+
 Add this link to your portfolio at https://ziaaad.vercel.app/:
 
 ```
@@ -26,15 +28,19 @@ https://github.com/fnziad/z_academicCV/raw/main/cv_latex/FahadNadimZiad_cv.pdf
 This will always serve the latest version of your CV.
 
 ### Option 2: Fetch and Host on Vercel
+
 In your portfolio repository, add a script to fetch the CV during build:
 
 ```javascript
 // In your portfolio's build script or API route
-const cvUrl = 'https://github.com/fnziad/z_academicCV/raw/main/cv_latex/FahadNadimZiad_cv.pdf';
+const cvUrl =
+  "https://github.com/fnziad/z_academicCV/raw/main/cv_latex/FahadNadimZiad_cv.pdf";
 ```
 
 ### Option 3: GitHub Pages
+
 Enable GitHub Pages for this repo and access via:
+
 ```
 https://fnziad.github.io/z_academicCV/cv_latex/FahadNadimZiad_cv.pdf
 ```
