@@ -6,6 +6,14 @@ The academic CV is now hosted in a separate GitHub repository with automatic PDF
 
 **Repository:** https://github.com/fnziad/z_academicCV
 
+# CV Integration Instructions for Portfolio
+
+## 📄 CV Location & Access
+
+The academic CV is hosted in a separate GitHub repository:
+
+**Repository:** https://github.com/fnziad/z_academicCV
+
 **Direct PDF Link:**
 
 ```
@@ -15,9 +23,14 @@ https://github.com/fnziad/z_academicCV/raw/main/cv_latex/FahadNadimZiad_cv.pdf
 ## 🔄 How It Works
 
 1. CV is maintained as a LaTeX file (`FahadNadimZiad_cv.tex`)
-2. GitHub Actions automatically compiles it to PDF on every push
-3. The PDF is always up-to-date and accessible via the raw GitHub link
-4. No manual compilation needed - fully automated!
+2. PDF is compiled locally and committed to the repository
+3. The PDF is always accessible via the raw GitHub link above
+4. Your portfolio fetches the PDF directly from GitHub## 🔄 How It Works
+
+5. CV is maintained as a LaTeX file (`FahadNadimZiad_cv.tex`)
+6. GitHub Actions automatically compiles it to PDF on every push
+7. The PDF is always up-to-date and accessible via the raw GitHub link
+8. No manual compilation needed - fully automated!
 
 ## 🌐 Integration with Portfolio (https://ziaaad.vercel.app/)
 

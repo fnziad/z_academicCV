@@ -1,19 +1,18 @@
 # Academic CV - Fahad Nadim Ziad
 
-This repository contains my academic CV in LaTeX format with automatic PDF compilation via GitHub Actions.
+This repository contains my academic CV in LaTeX format.
 
 ## 📄 Files
 
 - `cv_latex/FahadNadimZiad_cv.tex` - Main CV source file
-- `cv_latex/FahadNadimZiad_cv.pdf` - Compiled PDF (auto-updated)
+- `cv_latex/FahadNadimZiad_cv.pdf` - Compiled PDF
 
-## 🔄 Automatic Updates
+## 🔄 How to Update
 
-Whenever you push changes to the `.tex` file, GitHub Actions will:
-
-1. Automatically compile it to PDF
-2. Commit the updated PDF back to the repository
-3. Make it available for your portfolio website
+1. Edit `cv_latex/FahadNadimZiad_cv.tex`
+2. Compile locally: `cd cv_latex && /Library/TeX/texbin/pdflatex FahadNadimZiad_cv.tex`
+3. Commit both `.tex` and `.pdf` files
+4. Push to GitHub - your portfolio will automatically serve the latest version
 
 ## 🌐 Integration with Portfolio Website
 
@@ -45,26 +44,7 @@ Enable GitHub Pages for this repo and access via:
 https://fnziad.github.io/z_academicCV/cv_latex/FahadNadimZiad_cv.pdf
 ```
 
-## 📝 How to Update Your CV
 
-1. Edit `cv_latex/FahadNadimZiad_cv.tex`
-2. Commit and push:
-   ```bash
-   git add cv_latex/FahadNadimZiad_cv.tex
-   git commit -m "Update CV: [describe changes]"
-   git push
-   ```
-3. GitHub Actions will automatically compile and update the PDF
-4. Your portfolio will show the latest version (may take 1-2 minutes)
-
-## 🏗️ Local Compilation
-
-If you want to compile locally:
-
-```bash
-cd cv_latex
-/Library/TeX/texbin/pdflatex FahadNadimZiad_cv.tex
-```
 
 ## 📅 Last Updated
 
