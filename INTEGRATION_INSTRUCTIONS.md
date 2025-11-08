@@ -160,5 +160,20 @@ const CVDownloadButton = () => {
 
 ---
 
+## ✅ Summary for Portfolio Copilot
+
+**What you need to do:**
+
+Simply add a link/button to download or view the CV using this URL:
+```
+https://github.com/fnziad/z_academicCV/raw/main/cv_latex/FahadNadimZiad_cv.pdf
+```
+
+The PDF is always kept up-to-date by the CV owner. Your portfolio just needs to link to it.
+
+**No additional setup needed** - just use the URL above in your download button or PDF viewer.
+
+---
+
 **Last Updated:** November 9, 2025  
 **Maintained By:** Fahad Nadim Ziad
