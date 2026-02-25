@@ -1,0 +1,233 @@
+\documentclass[10pt,a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fontawesome5} % Icons for social links
+\usepackage{hyperref}
+\usepackage{enumitem} % For list customization
+\usepackage{titlesec}
+\usepackage{multicol} % For two-column layout
+\usepackage[left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm]{geometry} % Tighter margins
+
+% --- CUSTOMIZATIONS ---
+\pagestyle{empty} % No page numbers
+\setlength{\parindent}{0pt} % No paragraph indent
+\setlist{nosep, leftmargin=*} % More compact lists globally
+
+% Define a custom color for links
+\definecolor{linkcolor}{rgb}{0.1, 0.4, 0.7}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+}
+
+% Improved section headings with better spacing
+\titleformat{\section}
+  {\vspace{6pt}\large\bfseries\scshape\color{black!75}}
+  {}
+  {0em}
+  {}[\color{black!70}\hrule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+% Subsection formatting to match main sections
+\titleformat{\subsection}
+  {\vspace{4pt}\normalsize\bfseries\scshape\color{black!75}}
+  {}
+  {0em}
+  {}[\color{black!70}\hrule height 0.3pt]
+\titlespacing*{\subsection}{0pt}{4pt}{2pt}
+
+% Tighter project environment
+\newenvironment{project}{
+    \begin{itemize}[leftmargin=1.0em, itemsep=1pt, topsep=1pt, parsep=1pt]
+}{
+    \end{itemize}
+}
+
+% --- DOCUMENT START ---
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge \bfseries Fahad Nadim Ziad}\vspace{6pt}\\
+    {\small
+    Dhaka, Bangladesh \textbullet{} +8801676212004 \textbullet{} \href{mailto:f.n.ziad@gmail.com}{f.n.ziad@gmail.com}\\
+    \href{https://ziaaad.vercel.app}{\faIcon{globe}\, ziaaad.vercel.app} \quad
+    \href{https://www.linkedin.com/in/fahadnadimziad}{\faIcon[regular]{linkedin}\, linkedin.com/in/fahadnadimziad} \quad
+    \href{https://github.com/fnziad}{\faIcon[brands]{github}\, github.com/fnziad}
+    }
+\end{center}
+
+% --- EDUCATION ---
+\section*{Education}
+\noindent\textbf{BRAC University} \hfill Dhaka, Bangladesh\\
+\noindent\textit{Bachelor of Science in Computer Science} \hfill \textit{2022 -- 2026 (Expected)}\\
+\noindent\textbf{CGPA:} 3.71\,/\,4.0 \quad \textit{(Merit Scholarship Recipient)} \quad \textbf{Specialization:} Artificial Intelligence \& Machine Learning\\
+\noindent\textbf{Relevant Coursework:} Machine Learning, Data Science, AI, NLP, Pattern Recognition, Data Structures \& Algorithms, Database Systems, Software Engineering.
+\vspace{2pt}
+
+% --- WORK EXPERIENCE ---
+\section*{Work Experience}
+
+\noindent\textbf{United Commercial Bank PLC} \hfill Dhaka, Bangladesh\\
+\noindent\textit{Intern --- MD Secretariat, Process Reengineering (FinTech Young Talent Cohort)} \hfill \textit{February 2026 -- May 2026}
+\begin{project}
+    \item One of 35 selected from 2,000+ applicants across Bangladesh for the bank's inaugural FinTech Young Talent Cohort; placed directly under MD Secretariat in the Process Reengineering vertical.
+    \item Building a \textbf{Dashboard Manager} to replace manual Excel-based corporate task tracking for senior management, driving end-to-end process automation and digitization on the IT Audit team.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Eudika.com} \hfill Remote\\
+\noindent\textit{Computer Science Instructor (Part-time)} \hfill \textit{April 2025 -- Present}
+\begin{project}
+    \item Design and deliver O-Level Computer Science curriculum; mentor students in programming fundamentals and Cambridge exam technique.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{MH Academy} \hfill Dhaka, Bangladesh\\
+\noindent\textit{Instructor (Part-time)} \hfill \textit{2022}
+\begin{project}
+    \item Taught Mathematics, Physics, General Science, and IT to Grades 5--10 at an English-medium coaching center; adapted lesson delivery to diverse learning needs.
+\end{project}
+\vspace{2pt}
+
+% --- TECHNICAL SKILLS ---
+\section*{Technical Skills}
+\begin{itemize}
+    \item \textbf{Programming \& Query Languages:} Python, SQL, C/C++, JavaScript, TypeScript, LaTeX
+    \item \textbf{Data Analysis \& ML:} Pandas, NumPy, Scikit-learn, PyTorch, TensorFlow, XGBoost, LightGBM, SHAP, LIME
+    \item \textbf{Databases \& Tools:} MySQL, PostgreSQL, Git, Linux, Jupyter Notebooks, Excel
+    \item \textbf{Web Development:} React, Next.js, Flask, Node.js, TypeScript, Tailwind CSS
+\end{itemize}
+\vspace{2pt}
+
+% --- PROJECTS ---
+\section*{Projects}
+
+\noindent\textbf{ZeroTex --- LaTeX Resume Builder} \hfill \textit{Next.js, TypeScript, React}
+\begin{project}
+    \item Built production-ready resume builder with \textbf{Next.js 15, React 18, TypeScript, shadcn/ui}; engineered custom LaTeX generator with real-time preview, PDF export, dark/light mode. Deployed on \textbf{Vercel} at \href{https://zerotex.vercel.app}{zerotex.vercel.app}.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{CampusCompanion --- University Management Platform} \hfill \textit{Next.js, TypeScript, Tailwind CSS}
+\begin{project}
+    \item Developed campus platform with \textbf{Next.js, React, TypeScript, Tailwind CSS}; implemented SSR, authentication, course/event management, and announcements. Deployed at \href{https://campuscompanion-flame.vercel.app}{campuscompanion-flame.vercel.app}.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{CourseHUB --- Course Management System} \hfill \textit{Flask, Python, MySQL}
+\begin{project}
+    \item Engineered course platform with \textbf{Flask, Python, MySQL}; built dual-dashboard with role-based authentication (Flask-Login, Flask-Bcrypt), course enrollment, resource management, and search functionality.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Red Light, Green Light --- 3D Game} \hfill \textit{Python, PyOpenGL}
+\begin{project}
+    \item Created 3D FPS using \textbf{Python, PyOpenGL, GLUT}; engineered three-phase light system with freeze detection, enemy AI, combat mechanics with ammo, diverse enemy types, power-ups, and dynamic difficulty.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Mini-VSFS --- Custom File System} \hfill \textit{C, Systems Programming}
+\begin{project}
+    \item Built custom file system in \textbf{C} with Superblock, Unix-style Inodes (128-byte), hierarchical directories (64-byte entries), bitmap allocation, CRC32 checksums, 12 direct pointers, and utilities for creating/adding files.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{C Compiler --- Intermediate Code Generator} \hfill \textit{Flex/Yacc, C++}
+\begin{project}
+    \item Built two-pass compiler using \textbf{Flex/Yacc, C++} with 16-node AST; implemented lexical/syntax/semantic analysis, hash-based symbol table, three-address code generation via post-order traversal, and optimized temp variable reuse.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Gamified Mobile Banking Platform} \hfill \textit{React, Node.js, PostgreSQL}
+\begin{project}
+    \item Built a full-stack web platform with \textbf{React, Node.js, PostgreSQL} to simulate gamified financial literacy; implemented portfolio simulation engine, user progress tracking, and an analytics dashboard measuring engagement and financial decision-making behaviour.
+\end{project}
+\vspace{4pt}
+
+% --- RESEARCH ---
+\section*{Research Experience}
+
+\noindent\textbf{C-MAT: Cross-Modal Aligned Transformer for Neurodegenerative Assessment} \hfill \textit{B.Sc. Thesis}
+\begin{project}
+    \item Leading development of \textbf{C-MAT}, a Dual-Stream Vision Transformer framework in \textbf{PyTorch} to diagnose Alzheimer's, Parkinson's, and FTD from multi-modal neuroimaging; converts EEG signals to spectrograms for ViT input and applies Cross-Modal Contrastive Alignment across MRI and EEG modalities.
+    \item Implemented \textbf{Modality Dropout with Learnable Null Embeddings} for robust inference when only one modality is available (targeting low-resource settings); built an ETL pipeline aggregating \textbf{1,400+ records} from 5 international sources (BrainLat, OASIS, PPMI, AHEPA) with MNI152 registration and ICA-based EEG artifact rejection; integrated \textbf{SHAP} and Attention Rollout for brain region visualisation.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{BioAlign-QLoRA: Biomedical Knowledge Graph Alignment} \hfill \textit{Research Project}
+\begin{project}
+    \item Led team developing novel \textbf{Knowledge Graph Separation} metric; analyzed 68,444+ gene-disease associations using \textbf{Python (Pandas, NumPy)} and fine-tuned three LLMs (Llama-3, Mistral, Phi-3) with \textbf{QLoRA, PyTorch, Hugging Face}.
+    \item Achieved \textbf{83.8\% accuracy}, outperforming BioMistral-7B; co-authored research paper demonstrating \textbf{126\% improvement} in embedding alignment, preparing for journal submission.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Breast Cancer Prediction via Multi-Task U-Net} \hfill \textit{Deep Learning}
+\begin{project}
+    \item Preprocessed BUSI dataset (600+ ultrasound images) using \textbf{Python, PyTorch, OpenCV, Albumentations}; architected multi-task U-Net for simultaneous segmentation and classification (benign/malignant/normal).
+    \item Achieved \textbf{85.4\% Dice coefficient, 87.5\% accuracy}; conducted statistical validation using \textbf{Scikit-learn} and documented methodology in research report with visualizations.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Recession Prediction with Explainable AI} \hfill \textit{Research Project}
+\begin{project}
+    \item Integrated economic data from 15+ sources using \textbf{Python (Pandas, NumPy), SQL}; engineered lagged features and rolling statistics to predict GDP-Based and Sahm Rule indicators.
+    \item Benchmarked models (Random Forest, XGBoost, LSTM, Ensemble) achieving \textbf{96\% accuracy, 0.97 weighted F1-score}; applied \textbf{SHAP} for interpretability; authored research paper with visualizations.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Exoplanet Habitability Classification} \hfill \textit{ML Research}
+\begin{project}
+    \item Built ML pipeline analyzing PHL Catalog (5,600+ exoplanets, 100+ features) using \textbf{Python (Pandas, Dask, Matplotlib, Seaborn)}; conducted EDA, handled missing data, and benchmarked 8 algorithms.
+    \item Addressed class imbalance with SMOTE; implemented \textbf{LIME} for explainability and permutation importance; documented complete workflow in research report with visualizations.
+\end{project}
+\vspace{4pt}
+
+% --- EXTRACURRICULAR ACTIVITIES ---
+\section*{Extracurricular Activities}
+
+\noindent\textbf{Volunteer} \textbar{} Nishonkoch Foundation \hfill 2018 -- 2020
+\begin{project}
+    \item Contributed to community service initiatives; assisted in developing social media fundraising campaigns and coordinating outreach events.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Sub Executive, Marketing \& PR} \textbar{} BRAC University Business Club \hfill 2022 -- 2024
+\begin{project}
+    \item Executed multi-platform digital marketing campaigns promoting university events; tracked campaign metrics and prepared performance reports.
+\end{project}
+\vspace{4pt}
+
+\noindent\textbf{Senior Executive, Business Development} \textbar{} IABC | BRACU \hfill 2022 -- 2023
+\begin{project}
+    \item Organized Model UN events, led club promotion initiatives, and managed member recruitment drives.
+\end{project}
+
+% --- AWARDS & CERTIFICATIONS ---
+\section*{Awards \& Certifications}
+
+\noindent\textbf{Silver Explorer Award} --- 3rd International Poster Competition for Young Researchers, UNIV (2025);\\
+\textit{awarded for research on gamified mobile banking adoption among university students.}
+\vspace{4pt}
+
+\noindent\textbf{Outstanding Delegate} --- BUPIMUN (2023); \textbf{Special Mention} --- NDCMUN (2020), EMUNGA (2021)
+\vspace{6pt}
+
+\noindent\textbf{Certifications:}
+\begin{itemize}
+    \item AWS Educate Machine Learning Foundations (Amazon Web Services, 2025)
+    \item Introducing Generative AI with AWS (Udacity, 2025)
+    \item Exploratory Data Analysis in Python \& SQL (DataCamp, 2024)
+\end{itemize}
+
+\section*{Languages}
+\textbf{English:} Fluent (IELTS 7.5) \quad \textbf{Bangla:} Native \quad \textbf{Hindi / Urdu:} Conversational
+
+
+
+\end{document}
